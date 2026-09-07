@@ -1,4 +1,5 @@
 import hashlib
+import sys
 
 def get_file_hash(filepath):
     # return hash of the file
