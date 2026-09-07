@@ -40,4 +40,7 @@ def check_file(filepath):
         print(f"{filepath} has been modified!")
         
 if __name__ == "__main__":
-    print(get_file_hash("example.txt"))
+    if len(sys.argv) < 2:
+        print("Usage: python hash_demo.py <filename>")
+    else:
+        check_file(sys.argv[1])
